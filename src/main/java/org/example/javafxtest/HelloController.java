@@ -35,7 +35,7 @@ public class HelloController implements Initializable {
                     return;
                 }
                 if(viewModel.getDates().contains(formattedDate)) {
-                    showAlert(Alert.AlertType.INFORMATION, "Information", "Information", "Datum existiert bereits!");
+                    showAlert(Alert.AlertType.INFORMATION, "Information", "Information", "Das Datum "+formattedDate+" ist bereits vorhanden!");
                     return;
                 }
                 viewModel.getDates().add(formattedDate);
