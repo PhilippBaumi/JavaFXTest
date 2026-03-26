@@ -44,7 +44,7 @@ public class HelloController implements Initializable {
         dateListView.setOnMouseClicked(event -> {
             String date=dateListView.getSelectionModel().getSelectedItem();
             if(date!=null) {
-                showAlert(Alert.AlertType.INFORMATION, "Datum", "Gewähltes Datum", date);
+                showAlert(Alert.AlertType.INFORMATION, "Datum", "Gewähltes Datum", "Du hast den "+date+" gewählt!");
             }
         });
     }
